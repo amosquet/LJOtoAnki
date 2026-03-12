@@ -1,0 +1,12 @@
+[project]
+name = "ljotoanki"
+version = "0.1.0"
+description = "Framework for converting PDFs of the LJO learning words to txt for importing into Anki"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.66.0",
+    "mistralai>=2.0.1",
+    "openai>=2.26.0",
+    "pypdf2>=3.0.1",
+]
