@@ -8,11 +8,10 @@ import config
 
 def call_gemini(text_input: str):
     """Sends the text to Google's Gemini model."""
-    # if not config.GEMINI_API_KEY:
-    #     return "Gemini API key missing."
+    if not config.GEMINI_API_KEY:
+        return "Gemini API key missing."
 
-    # client = genai.Client(api_key=config.GEMINI_API_KEY)
-    client = genai.Client(api_key="AIzaSyB6A8jTvGh7XGF8tFVTzfF12GxL1YIgBcg")
+    client = genai.Client(api_key=config.GEMINI_API_KEY)
     model = "gemini-2.5-pro"
     system = types.GenerateContentConfig(system_instruction=config.SYSTEM_PROMPT)
 
