@@ -16,6 +16,3 @@ def extract_text(file_path: str) -> str:
     except FileNotFoundError:
         print(f"Error: The file at {file_path} was not found.")
         return ""
-    except Exception as e:
-        print(f"An error occurred while reading the PDF: {e}")
-        return ""
