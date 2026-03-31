@@ -24,8 +24,10 @@ LJOtoAnki
 
 ### File Descriptions
 - **config.py** - Configuration settings
+- **.env.example** - Environment variable template
 - **llm_clients.py** - LLM client implementations
 - **main.py** - Main entry point of the application
 - **pdf_processor.py** - PDF processing utilities for extracting content from LJO learning words PDFs
 - **pyproject.toml** - Project metadata and dependency specifications
+- **.python-version** - Specifies Python version required
 - **uv.lock** - Lock file for reproducible dependency installation using uv package manager
